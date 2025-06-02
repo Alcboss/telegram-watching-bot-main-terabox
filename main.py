@@ -31,7 +31,7 @@ async def is_member(user_id):
 
 # Function to extract the unique code from a TeraBox link
 def extract_code(link):
-    match = re.search(r'/s(/1[a-zA-Z0-9_-]+)', link)
+    match = re.search(r'/s/([a-zA-Z0-9_-]+)', link)
     return match.group(1) if match else None
 
 # Function to extract metadata from the HTML content
