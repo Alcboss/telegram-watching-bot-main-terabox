@@ -140,7 +140,7 @@ async def process_link(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
 
     if unique_code:
         try:
-            api_url = f"https://terabox.com/sharing/embed?surl={unique_code}"
+            api_url = f"https://arewhai35.brendanav492.workers.dev/?id={unique_code}"
             response = requests.get(api_url)
 
             if response.ok:
